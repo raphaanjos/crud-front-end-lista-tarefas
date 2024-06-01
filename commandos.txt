@@ -16,3 +16,6 @@ django-admin startproject setup .
 
 # executando o projeto
 python manage.py runserver
+
+# criando a pasta do projeto
+python manage.py startapp applist
