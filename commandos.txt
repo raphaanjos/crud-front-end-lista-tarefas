@@ -1,0 +1,18 @@
+
+# Criando ambiente virtual python
+ python -m venv .venv
+
+# Ativando ambiente virtual
+.\.venv\Scripts\activate
+
+# Verificar restrinção do powershell
+Get-ExecutionPolicy (aparece como Restricted)
+
+# Mudar restrinção policy
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass 
+
+# Iniciando um novo projeto
+django-admin startproject setup .
+
+# executando o projeto
+python manage.py runserver
