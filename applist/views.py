@@ -1,10 +1,8 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from .models import AppList
 
 
 def applist_list(request):
-    nome = "Raphael"
-    alunos = ["Raphael", "Raquel", "Wagner", "Dayse"]
-    return render(
-        request, "applist/applist_list.html", {"nome": nome, "alunos": alunos}
-    )
+    list = AppList.objects.all()
+
+    return render(request, "applist/applist_list.html", {"list": list})
