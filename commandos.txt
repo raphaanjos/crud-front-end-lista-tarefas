@@ -21,4 +21,5 @@ python manage.py runserver
 python manage.py startapp applist
 
 # criando tabelas
-python manage.py migrate
+python manage.py makemigrations
+
