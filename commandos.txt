@@ -23,3 +23,9 @@ python manage.py startapp applist
 # criando tabelas
 python manage.py makemigrations
 
+# Isolando informacoes de configuracoes
+pip install python-decouple
+
+# convertendo formato de string de conexao para reconhecimento do django
+# Isolando informacoes de config do banco de dados
+pip install dj-database-url
