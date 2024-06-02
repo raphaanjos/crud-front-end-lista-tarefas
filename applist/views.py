@@ -2,6 +2,5 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 
-def home(request):
-    return render(request, 'applist/home.html')
-
+def applist_list(request):
+    return render(request, "applist/home.html")
