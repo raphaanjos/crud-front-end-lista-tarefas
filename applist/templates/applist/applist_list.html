@@ -1,1 +1,8 @@
 <h1>Lista de tarefas</h1>
+<span>Nome: {{ nome }}</span><br />
+<span>Alunos: </span>
+<ul>
+  {% for aluno in alunos %}
+  <li>{{ aluno }}</li>
+  {% endfor %}
+</ul>

@@ -3,4 +3,8 @@ from django.http import HttpResponse
 
 
 def applist_list(request):
-    return render(request, "applist/home.html")
+    nome = "Raphael"
+    alunos = ["Raphael", "Raquel", "Wagner", "Dayse"]
+    return render(
+        request, "applist/applist_list.html", {"nome": nome, "alunos": alunos}
+    )
